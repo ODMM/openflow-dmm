@@ -1,0 +1,58 @@
+# Copyright (C) IMDEA Networks Institute and NETCOM research group, Department of 
+# Telematics Engineering, University Carlos III of Madrid.
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; version 2 of the License.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+#
+# IMDEA Networks Institute and NETCOM research group, Department of 
+# Telematics Engineering, University Carlos III of Madrid, hereby disclaims all 
+# copyright interest in the program 'OpenFlow-DMM', released by the Open Platform 
+# for DMM solutions (ODMM), written by Luca Cominardi <odmm-support@odmm.net>.
+#
+# signature of IMDEA Networks Institute and NETCOM research group, Department of 
+# Telematics Engineering, University Carlos III of Madrid, 12 June 2015.
+# Albert Banchs, Deputy director of IMDEA Networks Institute and Titular professor
+# at University Carlos III of Madrid.
+
+
+
+
+"""
+This file includes the static/hardcoded variables
+"""
+
+COOKIE = 15
+COOKIE_MASK = 15
+
+ETH_PATTERN = r'[0-9a-fA-F]{2}:[0-9a-fA-F]{2}:[0-9a-fA-F]{2}:[0-9a-fA-F]{2}:[0-9a-fA-F]{2}:[0-9a-fA-F]{2}'
+
+# The MAC of Mobile Nodes
+MN_ETH = ['00:11:22:33:44:55']
+
+# The dpids of gateways
+WLAN_IFACE = 'wlan'
+GW_IFACE = 'gw'
+
+# OpenFlow config
+OF_TABLE_NUM = 5
+
+OF_TABLE_UES = 1
+OF_TABLE_ROUTING = 2
+OF_TABLE_NEIGH = 3
+OF_TABLE_UNKNOWN = 4
+OF_TABLE_DEFAULT = 5
+
+# The default log file
+LOG_FILE = '/tmp/ryu.log'
+# The default log file
+DEBUG_FILE = '/tmp/ryu.debug'
